@@ -3,62 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <!--font family-->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | QR code component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     
-    body { 
-      background-color: hsl(212, 45%, 89%); 
-      text-align: center;
-      position: relative;
-    }
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
     
-    .outerBox { 
-      width: 300px; height: 450px; 
-      background-color: hsl(0, 0%, 100%); 
-      border-radius: 20px;
-      text-align: center; 
-      margin: 150px auto;
-    }
-    .outerBox { font-size: 15px;}
-      
-    b {font-family: 'Outfit', sans-serif; font-size: 20px;}
-    p {font-family: 'Outfit', sans-serif; color: gray;}
-    .innerBox {
-      width: 270px; height: 270px;
-      background-image: url("./images/image-qr-code.png");
-      background-position: center;
-      background-size: contain;
-      border-radius: 15px;
-      display: inline-block;
-      margin: 15px 15px;
-    }
   </style>
 </head>
 <body>
 
-  <div class="outerBox">
-    <div class="innerBox"></div>
-    
+  <section class="outer-box">
+    <img class="qr-code-img"
+      src="./images/image-qr-code.png"
+      alt="qr code linked Frontend Mentor.io">
 
-    <b style="font-weight: 700;">Improve your front-end<br>skills by building projects</b>
-
-    <p style="font-weight: 400;">Scan the QR code to visit Frontend<br>Mentor and take your coding skills to<br>the next level</p>
-  </div>
+    <section class="inner-text">
+      <b class="bold-paragraph" style="font-weight: 700;">Improve your front-end skills by building projects</b>
+      <p class="light-paragraph" style="font-weight: 400;">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>  
+    </section>
+      </div>
   
 
   
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Jeong-min Park</a>.
+    Coded by <a href="https://github.com/jeongmin-0113">Jeong-min Park</a>.
   </div>
 </body>
 </html>
